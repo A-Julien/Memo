@@ -1,4 +1,12 @@
 #!/bin/sh
+for f in *; do
+        if [[ -d $f ]] && [ "$f" != "config" ]; then
+                echo "compilation of "$f" file"
+                pwd
+                pandoc -s -S --toc -c ../pandoc.css $f/README.md  -o config/generate/$f"_memo".html
+                fi
+        done
+
 
 UPSTREAM=${1:-'@{u}'}
 
