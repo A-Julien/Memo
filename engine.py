@@ -56,24 +56,26 @@ html = """
 </html>
 """
 soup = Soup(html,'html.parser')
+rand = 0
 
-
-for filename in glob.iglob('Memo/*.html'):
+for filename in glob.iglob('/home/pi/Memo/config/compile/*.html'):
     file = str(filename)
-    rand = 0
     buf = random.randint(1, 9)
     while str(buf) == rand:
         buf = random.randint(1, 4)
     rand = str(buf)
-    title = file.split("/")[1].split(".")[0].split("_")[0]
+    print file
+    namePath = file.split("/")[-1]
+    title = file.split("/")[-1].split(".")[0].split("_")[0]
+    print title
     article = '<article class=\"style'+ rand +'\">' \
               '<span class=\"image\">' \
               '<img src=\"images/pic0'+ rand +'.jpg\" alt=\"\" />' \
               '</span>' \
-              '<a href=\"'+ file +'\">' \
+              '<a href=\"compile/'+ namePath +'\">' \
               "<h2>"+title+"</h2>" \
               '<div class=\"content\">' \
-              "<p>"+ file +"</p>" \
+              "<p>"+ title +"</p>" \
               '</div>' \
               '</a>' \
               '</article>'
@@ -82,7 +84,7 @@ for filename in glob.iglob('Memo/*.html'):
 
 
 print soup
-filename = "./index.html"
+filename = "/home/pi/index.html"
 
 raw = open(filename, "r+")
 contents = raw.read().split("\n")
