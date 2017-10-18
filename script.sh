@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /home/pi/Memo
 git pull
 rm /home/pi/Memo/config/compile/*.html
 for f in *; do
