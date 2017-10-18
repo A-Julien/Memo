@@ -1,6 +1,6 @@
 # BASH Script
 
-## If statement
+## Condition statement
 
 Primary |	Meaning
 ------------- | -------------
@@ -22,12 +22,10 @@ Primary |	Meaning
 [ -x FILE ]|	True if FILE exists and is executable.
 [ -O FILE ]|	True if FILE exists and is owned by the effective user ID.
 [ -G FILE ]|	True if FILE exists and is owned by the effective group ID.
-
 [ -L FILE ]|	True if FILE exists and is a symbolic link.
 [ -S FILE ]|	True if FILE exists and is a socket.
 [ FILE1 -nt FILE2 ]|	True if FILE1 has been changed more recently than FILE2, or if FILE1 exists and FILE2 does not.
 [ FILE1 -ot FILE2 ]|	True if FILE1 is older than FILE2, or is FILE2 exists and FILE1 does not.
-
 [ FILE1 -ef FILE2 ]|	True if FILE1 and FILE2 refer to the same device and inode numbers.
 [ -o OPTIONNAME ]|	True if shell option "OPTIONNAME" is enabled.
 [ -z STRING ]|	True of the length if "STRING" is zero.
@@ -37,6 +35,4 @@ Primary |	Meaning
 [ STRING1 < STRING2 ]|	True if "STRING1" sorts before "STRING2" lexicographically in the current locale.
 [ STRING1 > STRING2 ]|	True if "STRING1" sorts after "STRING2" lexicographically in the current locale.
 [ ARG1 OP ARG2 ]|	"OP" is one of -eq, -ne, -lt, -le, -gt or -ge. These arithmetic binary operators return true if "ARG1" is equal to, not equal to, less than, less than or equal to, greater than, or greater than or equal to "ARG2", respectively. "ARG1" and "ARG2" are integers.
-
-
 [ -N FILE ]|	True if FILE exists and has been modified since it was last read.
