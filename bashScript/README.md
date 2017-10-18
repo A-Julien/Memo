@@ -22,6 +22,7 @@ Primary |	Meaning
 [ -x FILE ]|	True if FILE exists and is executable.
 [ -O FILE ]|	True if FILE exists and is owned by the effective user ID.
 [ -G FILE ]|	True if FILE exists and is owned by the effective group ID.
+
 [ -L FILE ]|	True if FILE exists and is a symbolic link.
 [ -S FILE ]|	True if FILE exists and is a socket.
 [ FILE1 -nt FILE2 ]|	True if FILE1 has been changed more recently than FILE2, or if FILE1 exists and FILE2 does not.
