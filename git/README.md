@@ -24,8 +24,7 @@ Update your branch when the original branch from official repository has been up
 $ git fetch [name_of_your_remote]
 ```
 
-##Sub module
-
+## Sub module
 
 Clone submodule after clonning master module :
 ```
