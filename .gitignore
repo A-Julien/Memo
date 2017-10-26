@@ -1,0 +1,68 @@
+# Log file
+*.log
+
+# Package Files #
+*.zip
+*.tar.gz
+*.rar
+*.kar
+
+#temporary files
+*.tmp
+*.bak
+
+
+#generate dockerfile
+docker/mqtt/dockerfile/**
+docker/domi_cube/dockerfile/**
+
+#openhab 
+openhab_files/userdata
+openhab_files/addons_files
+
+###########################
+##		LINUX
+###########################
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+###########################
+##		MAC
+###########################
+
+# General
+.AppleDouble
+.LSOverride
+
+# Mac finder  files
+*.DS_Store
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
